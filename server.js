@@ -1,12 +1,13 @@
 const express = require('express');
 const app = express();
-const env = require('./config/env.js'); 
+const env = require('./config/env.js'); // Não é necessário. Remove para testar.
 const db = require('./config/db.config.js');
 const router = require('./routes/route.js');
 const bodyParser = require('body-parser'); 
 const Cliente = db.Cliente;
+const cors = require('cors')
 
-//const cors = require('cors')
+app.unsubscribe(cors());
 //origin: 'http://localhost:5173',
 //origin: 'http://192.168.3.10:5173',
 //const corsOptions = {

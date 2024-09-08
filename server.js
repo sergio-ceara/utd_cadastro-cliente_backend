@@ -8,7 +8,7 @@ const cors = require('cors')
 //origin: 'http://localhost:5173',
 //origin: 'http://192.168.3.10:5173',
 const corsOptions = {
-    origin: 'http://192.168.3.10:5173',
+    origin: 'http://localhost:5173',
     optionsSuccessStatus: 200
 }
 

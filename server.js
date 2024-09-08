@@ -1,18 +1,20 @@
 const express = require('express');
 const app = express();
+const env = require('./config/env.js'); 
 const db = require('./config/db.config.js');
 const router = require('./routes/route.js');
 const bodyParser = require('body-parser'); 
 const Cliente = db.Cliente;
-const cors = require('cors')
+
+//const cors = require('cors')
 //origin: 'http://localhost:5173',
 //origin: 'http://192.168.3.10:5173',
-const corsOptions = {
-    origin: 'http://localhost:5173',
-    optionsSuccessStatus: 200
-}
+//const corsOptions = {
+//    origin: 'http://junction.proxy.rlwy.net:5173',
+//    optionsSuccessStatus: 200
+//}
+//app.use(cors(corsOptions));
 
-app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.use(express.static('resources'));
 app.use('/api', router);

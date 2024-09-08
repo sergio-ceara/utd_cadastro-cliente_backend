@@ -2,8 +2,8 @@ const env = {
 	database: 'railway',
     username: 'root',
     password: 'FGdmoFuYchFwZoUAbwLwtMOZkUXEGpbv',
-    host: 'junction.proxy.rlwy.net',
-    port: 55780,
+    host: 'localhost',
+    port: 3306,
     dialect: 'mysql',
 };
   
